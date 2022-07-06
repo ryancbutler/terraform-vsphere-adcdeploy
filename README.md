@@ -15,7 +15,7 @@ Run the following
 ```powershell
 terraform init
 #Work around for changing password
-terraform apply -auto-approve -target="module.build" && start-sleep -seconds 20 && terraform apply -auto-approve -target="module.password" && terraform apply -auto-approve -target="module.config"
+terraform apply -auto-approve -target="module.build" && start-sleep -seconds 30 && terraform apply -auto-approve -target="module.password" && terraform apply -auto-approve -target="module.config"
 ```
 
 ## To Destroy
